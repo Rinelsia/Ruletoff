@@ -1,0 +1,138 @@
+body{
+    background-image: url(../img/background/background73.jpg);
+}
+/*header*/
+header{
+    background-image: url(../img/background/background73.jpg);
+}
+header h1{
+    margin-bottom: 0;
+    margin-top: 0;
+}
+header .col-auto p{
+    margin-top: 0;
+}
+header .col-xl-9 p{
+    text-align: center;
+}
+/*nav*/
+nav .container{
+    padding-top: 1rem;
+    padding-bottom: 0.41rem;
+}
+nav .row.justify-content-center{
+    height: 100%;
+    align-items: center;
+}
+nav a{
+    color: #555;
+    text-decoration: none;
+    font-size: 16pt;
+    padding: 0.5rem;
+}
+/*корзина*/
+nav .basket{
+/*    вид кнопки*/
+    position: relative;
+    bottom: 1.2rem;
+    background: rgb(81 201 255);
+    width: 85%;
+    padding: 0.4rem;
+    border-radius: 5px;
+    font-size: 16pt;
+    cursor: pointer;
+}
+nav .basket-window{
+    position: absolute;
+    right: 2rem;
+    z-index: 100;
+    background-color: rgb(249 248 248);
+    box-shadow: 0px 0px 4px 0px rgb(50, 50, 50);
+    border-radius: 2px;
+    width: 250px;
+    height: 200px;
+}
+nav .basket-window::before, nav .basket-window::after{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: 87%;
+    left: 43%;
+    border-color: aliceblue;
+    width: 40px;
+    height: 40px;
+    background-color: #f9f8f8;
+    transform: rotate(45deg);
+    box-shadow: 0px 0px 4px 0px rgb(50, 50, 50);
+}
+nav .basket-window::before{
+    z-index: 1;
+    box-shadow: none;
+}
+/*main*/
+main .container{
+    max-width: 1200px;
+    background: #fbfaf7;
+    box-shadow: 0px 1px 1px 2px rgb(239 241 247);
+    border-radius: 5px;
+    min-height: 540px;
+}
+main>.container{
+    position: relative;
+    top: 31px;
+}
+/*карточка товара*/
+main .tovar{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 0 1px 1px rgb(243 235 235);
+}
+main .img{
+    min-height: 200px;
+    max-height: 300px;
+    background-color: #a7b1b9;
+    
+}
+main .info{
+    margin: 0;
+    min-height: 8rem;
+}
+/*a - кнопка модального окна*/
+main .add-modal{
+    position: absolute;
+    height: 53%;
+    width: 90%
+}
+/*модальное окно*/
+main .modal-window{
+    visibility: hidden;
+    position: fixed;
+    top: 0rem;
+    z-index: 100;
+    background: rgba(10, 10, 10, 0.5);
+    width: 100%;
+    padding: 4rem;
+}
+main .modal-window .img{
+    background-color: cadetblue;
+    height: 290px;
+}
+main .modal-window .row{
+    padding: 4rem;
+}
+main .modal-window .x{
+    margin-left: auto;
+    height: 55px;
+    width: 15px;
+    color: red;
+    font-family: sans-serif;
+    font-size: 33pt;
+    position: relative;
+    bottom: 3rem;
+    cursor: pointer;
+}
+main .activ{
+    visibility: visible !important;
+}
